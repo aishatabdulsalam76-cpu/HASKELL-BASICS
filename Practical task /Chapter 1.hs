@@ -7,3 +7,12 @@ double x = x * 2
 main :: IO ()
 main = do
  print $ double 5 
+ 
+--increment: Increases a number by 1. 
+ 
+increment :: Int -> Int
+increment x = x + 1
+
+main :: IO ()
+main = do
+ print $ increment 5 
