@@ -31,3 +31,23 @@ doubleThenincrement = increment . double
 main :: IO ()
 main = do
  print $ doubleThenincrement 6
+
+--HC1T2 - Task 2: Pure Function Example
+--Write a function circleArea that calculates the area of a circle given the radius. Ensure that it’s pure and does not depend on any external state.
+circleArea :: Float -> Float
+circleArea r = pi * r * r
+
+main :: IO ()
+main = do
+ print ( circleArea 5 )
+
+--HC1T3 - Task 3: Checking if a Number is Greater than 18
+--Write a function greaterThan18 that checks whether a given number is greater than 18.
+
+greaterThan18 :: Int -> Bool
+greaterThan18 x = x >= 18
+
+main :: IO ()
+main = do
+ print $ greaterThan18 5
+ 
